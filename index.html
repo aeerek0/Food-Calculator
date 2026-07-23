@@ -151,13 +151,8 @@
 <div class="container">
     <h2>🍽️ คำนวณค่าอาหาร</h2>
     
-    <!-- ส่วนตั้งค่าหลักและชื่อร้านอาหาร -->
+    <!-- ส่วนตั้งค่าหลัก -->
     <div class="input-group">
-        <!-- ย้ายชื่อร้านมาไว้ตรงตำแหน่งเริ่มต้นของส่วนคำนวณ -->
-        <div class="form-control full-width">
-            <label>ชื่อร้านอาหาร :</label>
-            <input type="text" id="restaurantNameInput" placeholder="ระบุชื่อร้านอาหาร">
-        </div>
         <div class="form-control">
             <label>ตั้งค่า VAT (%) :</label>
             <input type="number" id="vatPercentInput" value="10" oninput="calculateAll()">
@@ -191,6 +186,13 @@
     <hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
 
     <h3>รายชื่อและค่าอาหาร</h3>
+
+    <!-- ช่องกรอกชื่อร้านอาหาร (อยู่ใต้หัวข้อ รายชื่อและค่าอาหาร) -->
+    <div class="form-control full-width" style="margin-bottom: 15px;">
+        <label>ชื่อร้านอาหาร :</label>
+        <input type="text" id="restaurantNameInput" placeholder="ระบุชื่อร้านอาหาร">
+    </div>
+
     <button class="btn btn-add" onclick="addPersonRow()">➕ เพิ่มคน / รายการ</button>
 
     <!-- ตารางแบบสไลด์บนมือถือได้ -->
