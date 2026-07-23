@@ -153,6 +153,11 @@
     
     <!-- ส่วนตั้งค่าหลัก -->
     <div class="input-group">
+        <!-- เพิ่มช่องกรอกชื่อร้านอาหาร -->
+        <div class="form-control full-width">
+            <label>ชื่อร้านอาหาร :</label>
+            <input type="text" id="restaurantNameInput" placeholder="ระบุชื่อร้านอาหาร">
+        </div>
         <div class="form-control">
             <label>ตั้งค่า VAT (%) :</label>
             <input type="number" id="vatPercentInput" value="10" oninput="calculateAll()">
@@ -300,8 +305,8 @@
 
             row.querySelector('.row-vat').innerText = vat.toFixed(1);
             row.querySelector('.row-with-vat').innerText = costWithVat.toFixed(1);
-            row.querySelector('.row-discount').innerText = personDiscount.toFixed(4); // ล็อก 4 ตำแหน่งให้กระชับบนจอเล็ก
-            row.querySelector('.row-final').innerText = finalPay.toFixed(2); // ยอดจ่ายจริงแสดง 2 ตำแหน่งดูง่ายขึ้น
+            row.querySelector('.row-discount').innerText = personDiscount.toFixed(4);
+            row.querySelector('.row-final').innerText = finalPay.toFixed(2);
 
             totalDiscountSum += personDiscount;
             totalFinalSum += finalPay;
